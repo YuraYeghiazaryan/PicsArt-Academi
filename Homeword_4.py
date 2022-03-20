@@ -32,3 +32,17 @@ def fib_3p(n, a=0, b=1, c=2):
 
 
 print(fib_3p(7))
+
+
+Վարժություն 1.12
+def fact(n):
+    if n == 0:
+        return 1
+    return n*fact(n-1)
+
+def pas(n,m):
+    if (m < 0 or n<m):
+        return "Wrong Input!"
+    return fact(n)/(fact(m)*fact(n-m))
+
+print(pas(3,3))
