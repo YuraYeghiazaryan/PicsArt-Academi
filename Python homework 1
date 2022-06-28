@@ -1,10 +1,8 @@
 # ստուգում է val, էլեմենտ պարունակվում է լիստում, թե ոչ
 def contain(data, val):
-  for i in data:
-    if data.count(val) > 0:
-      return 'Yes'
+  if val in data:
+    return 'Yes'
   return 'No'
-
 
 lst1 = [6,4,0]
 lst2 = [2, 2, 3 ]
